@@ -231,23 +231,30 @@
                     <div class="form-up">
                         <div class="input-box">
                             <label for="username">Imię:</label>
-                            <input type="text" id="username" name="username" placeholder="Wpisz swoje imię">
+                            <input type="text" id="username" name="username" placeholder="Wpisz swoje imię" required>
+                            <p class="error-text">error</p>
                         </div>
                         <div class="input-box">
                             <label for="phone">Numer telefonu:</label>
-                            <input type="text" id="phone" name="phone" placeholder="Wpisz swój numer tel.">
+                            <input type="text" id="phone" name="phone" placeholder="Wpisz swój numer tel." required>
+                            <p class="error-text">error</p>
                         </div>
                         <div class="input-box">
                             <label for="email">E-mail:</label>
-                            <input type="text" id="email" name="email" placeholder="Wpisz swój e-mail">
+                            <input type="text" id="email" name="email" placeholder="Wpisz swój e-mail" required>
+                            <p class="error-text">error</p>
                         </div>
                     </div>
                     <div class="form-down">
                         <label for="message">Wiadomość: </label>
-                        <textarea id="message" name="message" cols="30" rows="10"></textarea>
-                        <input type="submit" name="submit" value="Wyślij" class="send-btn" />
+                        <textarea id="message" name="message" cols="30" rows="10" placeholder="Wpisz swoją wiadomość"
+                            required></textarea>
+                        <p class="error-text">error</p>
+                        <input type="submit" name="submit" value="Wyślij" class="send-btn">
                     </div>
                 </form>
+
+                <p class="msg-status">Wiadomość wysłana</p>
             </div>
             <div class="contact-details-map">
                 <div class="contact-details">
@@ -280,6 +287,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./dist/js/slick.min.js"></script>
     <script src="./dist/js/main.min.js"></script>
+    <script src="./dist/js/form.min.js"></script>
     <script src="./dist/js/burger.min.js"></script>
 
 </body>

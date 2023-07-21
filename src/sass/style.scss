@@ -496,6 +496,21 @@ main {
 					input {
 						padding: 5px;
 						font-size: 1rem;
+						background-color: #f1e8e8;
+					}
+					.error-text {
+						visibility: hidden;
+						font-size: 13px;
+						color: red;
+					}
+				}
+				.input-box.error {
+					input {
+						border: 1px solid rgb(0, 137, 250);
+						background-color: #bbb1b1;
+					}
+					.error-text {
+						visibility: visible;
 					}
 				}
 			}
@@ -515,9 +530,15 @@ main {
 					width: 50%;
 					max-width: 50%;
 					min-width: 50%;
-					margin-bottom: 2%;
+					margin-bottom: 1%;
 					padding: 5px;
 					font-size: 1rem;
+					background-color: #f1e8e8;
+				}
+				.error-text {
+					visibility: hidden;
+					font-size: 13px;
+					color: red;
 				}
 				.send-btn {
 					position: relative;
@@ -525,6 +546,7 @@ main {
 					padding: 10px 40px;
 					font-size: 1rem;
 					background-color: #745d5d;
+					margin-top: 2%;
 					border-radius: 5px;
 					border: 3px solid #473838;
 					color: #f1e8e8;
@@ -536,7 +558,40 @@ main {
 					color: #473838;
 				}
 			}
+			.form-down.error {
+				textarea {
+					border: 1px solid rgb(0, 137, 250);
+					background-color: #bbb1b1;
+				}
+				.error-text {
+					visibility: visible;
+				}
+			}
+			.msg-status {
+				display: none;
+				position: absolute;
+				top: 35%;
+				left: 50%;
+				transform: translateX(-50%);
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				height: 100px;
+				width: 400px;
+				font-size: 24px;
+				border-radius: 8px;
+				background-color: transparent;
+			}
+			.msg-succes {
+				display: flex;
+				color: rgb(18, 228, 18);
+			}
+			.msg-error {
+				display: flex;
+				color: rgb(235, 32, 32);
+			}
 		}
+
 		.contact-details-map {
 			display: flex;
 			justify-content: space-evenly;
@@ -775,8 +830,7 @@ footer {
 					.services-item-description {
 						margin: 10% 0%;
 						width: 80%;
-						h3 {
-						}
+
 						p {
 							font-size: 1.3rem;
 						}
